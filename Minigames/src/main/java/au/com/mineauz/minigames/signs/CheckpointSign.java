@@ -63,10 +63,10 @@ public class CheckpointSign implements MinigameSign {
                 player.sendInfoMessage(MinigameUtils.getLang("sign.checkpoint.set"));
                 return true;
             } else {
-                player.sendMessage(ChatColor.RED + "[Minigames] " + ChatColor.WHITE + MinigameUtils.getLang("sign.checkpoint.fail"), MinigameMessageType.ERROR);
+                player.sendMessage(ChatColor.RED + MinigameUtils.getLang("minigame.prefix") + ChatColor.WHITE + MinigameUtils.getLang("sign.checkpoint.fail"), MinigameMessageType.ERROR);
             }
         } else
-            player.sendMessage(ChatColor.AQUA + "[Minigames] " + ChatColor.WHITE + MinigameUtils.getLang("sign.emptyHand"), MinigameMessageType.INFO);
+            player.sendMessage(ChatColor.AQUA + MinigameUtils.getLang("minigame.prefix") + ChatColor.WHITE + MinigameUtils.getLang("sign.emptyHand"), MinigameMessageType.INFO);
         return false;
     }
 
